@@ -6,8 +6,10 @@ return {
 		telescope.load_extension("file_browser")
 	end,
 	keys = {
-		{ '<leader>ff', '<cmd>Telescope file_browser<CR>', desc = '[F]ind [F]iles' },
+		{ '<leader>ff', '<cmd>Telescope find_files<CR>', desc = '[F]ind [F]iles' },
+		{ '<leader>fb', '<cmd>Telescope file_browser<CR>', desc = '[F]ile [B]rowser' },
 		{ '<leader><space>', '<cmd>Telescope buffers<CR>', desc = '[F]ind [B]uffers' },
 		{ '<leader>fg', '<cmd>Telescope live_grep<CR>', desc = '[F]ind [G]rep' },
 	},
+	cmd = { 'Telescope' },
 }
