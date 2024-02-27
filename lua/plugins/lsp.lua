@@ -1,6 +1,7 @@
 -- Language server
 local lsp = {
 	'neovim/nvim-lspconfig',
+	lazy = false,
 	dependencies = {
 		{ 'williamboman/mason.nvim', config = true },
 		'williamboman/mason-lspconfig.nvim',
